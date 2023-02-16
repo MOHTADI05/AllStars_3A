@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Regime index{% endblock %}
+
+{% block body %}
+    <h1>Regime index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Discription</th>
+                <th>DDate</th>
+                <th>Nb_calorie</th>
+                <th>Duree</th>
+                <th>image</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for regime in regimes %}
+            <tr>
+                <td>{{ regime.id }}</td>
+                <td>{{ regime.name }}</td>
+                <td>{{ regime.discription }}</td>
+                <td>{{ regime.dDate ? regime.dDate|date('Y-m-d') : '' }}</td>
+                <td>{{ regime.nbCalorie }}</td>
+                
+                <td>{{ regime.duree ? regime.duree|date('H:i:s') : '' }}</td>
+                
+                <td>{% if regime.image %}
+					<img src="/uploads/{{regime.image}}" alt="">
+					{% endif %}</td>
+                <td>
+                    <a href="{{ path('app_regime_show', {'id': regime.id}) }}">show</a>
+                    <a href="{{ path('app_regime_edit', {'id': regime.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_regime_new') }}">Create new</a>
+{% endblock %}
