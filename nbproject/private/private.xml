@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/AfficherController.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/Aliment.fxml</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/dao/TypeDao.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/FrontController.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/displayRegime.fxml</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/Type.fxml</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/ListType.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/DisplayRegimeController.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/entity/Regime.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/dao/RegimeDao.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/type.css</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/front.fxml</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/home.fxml</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/entity/Produit.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/HomeController.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/ListData.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/AjouterController.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/entity/Categorie.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/utils/MyConnection.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/entity/Aliment.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/dao/idao.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/ModifierController.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/entity/Type.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/view/TypeController.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/entity/Combo.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/entity/Promotion.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/dao/PromotionDao.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/pidev/PIDEV.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/utils/ConnextionSingleton.java</file>
+            <file>file:/C:/Users/mohta/Desktop/khalil/testRegime/src/com/promotion/dao/AlimentDao.java</file>
+        </group>
+    </open-files>
+</project-private>

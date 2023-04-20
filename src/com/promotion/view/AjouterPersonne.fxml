@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@JMetroDarkTheme.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.promotion.view.AcceuilController">
+   <children>
+      <Pane fx:id="BoutonValider" layoutX="15.0" layoutY="17.0" prefHeight="367.0" prefWidth="571.0" style="-fx-background-color: ivory; -fx-border-width: 2px; -fx-border-color: black;" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="17.0">
+         <children>
+            <Label layoutX="70.0" layoutY="41.0" prefHeight="17.0" prefWidth="80.0" text="id" textAlignment="CENTER" />
+            <Label layoutX="70.0" layoutY="88.0" text="POURCENTAGE" />
+            <Button id="valider" fx:id="btn" layoutX="405.0" layoutY="274.0" mnemonicParsing="false" text="Valider">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField id="nomText" fx:id="id" layoutX="165.0" layoutY="37.0" />
+            <TextField id="prenomText" fx:id="pourcentage" layoutX="165.0" layoutY="84.0" />
+            <Label layoutX="71.0" layoutY="227.0" prefHeight="17.0" prefWidth="80.0" text="PRODUIT" textAlignment="CENTER" />
+            <TextField id="nomText" fx:id="produit" layoutX="165.0" layoutY="223.0" />
+            <DatePicker fx:id="start_date" layoutX="165.0" layoutY="139.0" />
+            <Label layoutX="61.0" layoutY="139.0" text="START DATE" />
+            <Label layoutX="66.0" layoutY="182.0" text="END DATE" />
+            <DatePicker fx:id="end_date" layoutX="165.0" layoutY="178.0" />
+            <Label layoutX="61.0" layoutY="280.0" text="Categorie" />
+            <TextField id="nomText" fx:id="categorie" layoutX="141.0" layoutY="287.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

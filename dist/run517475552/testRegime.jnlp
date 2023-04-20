@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="testRegime.jnlp">
+  <information>
+    <title>testRegime</title>
+    <vendor>User</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\javafx-swt.jar" size="37123" download="eager" />
+    <jar href="lib\javafx.base.jar" size="752299" download="eager" />
+    <jar href="lib\javafx.controls.jar" size="2547926" download="eager" />
+    <jar href="lib\javafx.fxml.jar" size="130080" download="eager" />
+    <jar href="lib\javafx.graphics.jar" size="4261996" download="eager" />
+    <jar href="lib\javafx.media.jar" size="277699" download="eager" />
+    <jar href="lib\javafx.swing.jar" size="88811" download="eager" />
+    <jar href="lib\javafx.web.jar" size="727229" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="testRegime.jar" size="44175" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="testRegime" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pidev.PIDEV"  name="testRegime" />
+  <update check="always"/>
+</jnlp>
