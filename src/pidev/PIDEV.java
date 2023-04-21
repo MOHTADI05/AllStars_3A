@@ -38,7 +38,7 @@ public class PIDEV extends Application {
         this.primaryStage.setTitle("Hello Mohtadi");
         try {
             //Parent parent = FXMLLoader.load(getClass().getResource("/com/promotion/view/afficher.fxml"));
-           Parent parent = FXMLLoader.load(getClass().getResource("/com/promotion/view/home.fxml"));
+           Parent parent = FXMLLoader.load(getClass().getResource("/com/promotion/view/stats.fxml"));
             Scene scene = new Scene(parent);
             scene.setFill(Color.TRANSPARENT);
             primaryStage.setScene(scene);

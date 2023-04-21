@@ -162,18 +162,18 @@ private Parent fxml;
     private void update(MouseEvent event) {
    RegimeDao se = new RegimeDao();
 
-//        String lieu = NewLieu.getText();
-//        if (NewLieu.getText().isEmpty()) {
+        
 //            Alert alert = new Alert(Alert.AlertType.ERROR);
 //            alert.setTitle("Erreur");
 //            alert.setHeaderText(null);
-//         alert.setContentText(" vérifier vos informations ");
+//            alert.setContentText(" vérifier vos informations ");
+//        
 //         // Jouer le son
-////            String soundFile = "C:\\Users\\DELL\\Documents\\NetBeansProjects\\amir+sirine+ghacen+dhaker\\TRAVOLTA FINALMIXEDD2\\Travolta\\Travolta\\src\\com\\travolta\\utils\\son\\alert.wav";
-////            Media sound = new Media(new File(soundFile).toURI().toString());
-////            MediaPlayer mediaPlayer = new MediaPlayer(sound);
-////            mediaPlayer.setOnReady(() -> mediaPlayer.play());
-////            mediaPlayer.setOnEndOfMedia(() -> mediaPlayer.dispose());  
+//            String soundFile = "C:\\Users\\mohta\\Desktop\\khalil\\testRegime\\src\\son";
+//            Media sound = new Media(new File(soundFile).toURI().toString());
+//            MediaPlayer mediaPlayer = new MediaPlayer(sound);
+//            mediaPlayer.setOnReady(() -> mediaPlayer.play());
+//            mediaPlayer.setOnEndOfMedia(() -> mediaPlayer.dispose());  
 //         alert.showAndWait();
 //        } else {
         
@@ -222,12 +222,17 @@ private Parent fxml;
     private boolean validateInputs() {
     // Vérifier si le nom est vide
     if (nameCol.getText().isEmpty()) {
+        String soundFile = "C:\\Users\\mohta\\Desktop\\khalil\\testRegime\\src\\son\\mixkit-game-show-wrong-answer-buzz-950.wav";
+        Media sound = new Media(new File(soundFile).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(sound);
+        mediaPlayer.play();
+
         showAlert("Veuillez saisir un nom");
         return false;
     }
     if (!nameCol.getText().matches("^[a-zA-Z]+$")) {
-    showAlert("Le nom ne doit contenir que des lettres");
-    return false;
+        showAlert("Le nom ne doit contenir que des lettres");
+        return false;
     }
 
     // Vérifier si la description est vide
@@ -235,7 +240,7 @@ private Parent fxml;
         showAlert("Veuillez saisir une description");
         return false;
     }
-    
+
     // Vérifier si les calories sont un nombre entier
     try {
         Integer.parseInt(caloriesCol.getText());
@@ -243,7 +248,7 @@ private Parent fxml;
         showAlert("Veuillez saisir un nombre entier pour les calories");
         return false;
     }
-    
+
     // Vérifier si le type est un nombre entier
     try {
         Integer.parseInt(typeCol.getText());
@@ -251,7 +256,7 @@ private Parent fxml;
         showAlert("Veuillez saisir un nombre entier pour le type");
         return false;
     }
-    
+
     // Vérifier si la date de fin est un nombre entier
     try {
         Integer.parseInt(end_date.getText());
@@ -259,10 +264,11 @@ private Parent fxml;
         showAlert("Veuillez saisir un nombre entier pour la date de fin");
         return false;
     }
-    
+
     // Si toutes les validations ont réussi, renvoyer true
     return true;
 }
+
 
 private void showAlert(String message) {
     Alert alert = new Alert(Alert.AlertType.ERROR);

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.promotion.view.StatsController">
+   <children>
+      <PieChart fx:id="piechart" layoutX="121.0" layoutY="102.0" prefHeight="246.0" prefWidth="359.0" />
+      <Label layoutX="241.0" layoutY="39.0" prefHeight="25.0" prefWidth="120.0" text="Gaining vs Loss">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="over3000" layoutX="247.0" layoutY="64.0" prefHeight="17.0" prefWidth="36.0" text="*" />
+      <Label fx:id="under3000" layoutX="319.0" layoutY="64.0" prefHeight="17.0" prefWidth="36.0" text="*" />
+      <Button fx:id="PDF" layoutX="35.0" layoutY="27.0" mnemonicParsing="false" onAction="#OnBtnClicked" text="PrintPDF" />
+   </children>
+</AnchorPane>
