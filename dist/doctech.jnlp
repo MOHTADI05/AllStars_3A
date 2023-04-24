@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="doctech.jnlp">
+  <information>
+    <title>doctech</title>
+    <vendor>swide</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="doctech.jar" size="288492" download="eager" />
+    <jar href="lib\bcrypt-2.3.0.jar" size="1079" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\itextpdf-5.5.9.jar" size="2287148" download="eager" />
+    <jar href="lib\javax.mail.jar" size="659033" download="eager" />
+    <jar href="lib\jbcrypt.jar" size="14127" download="eager" />
+    <jar href="lib\kotlin-stdlib-common-1.6.10.jar" size="200617" download="eager" />
+    <jar href="lib\mysql-connector-j-8.0.32.jar" size="2480823" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="doctech" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="doctech.Doctech"  name="doctech" />
+  <update check="always"/>
+</jnlp>

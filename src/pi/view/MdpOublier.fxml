@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.view.MdpOublierController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="codeform" prefHeight="400.0" prefWidth="298.0" styleClass="white-form" stylesheets="@logindesign.css">
+               <children>
+                  <TextField fx:id="code" layoutX="51.0" layoutY="210.0" prefHeight="27.0" prefWidth="178.0" promptText="code" styleClass="textfield" stylesheets="@logindesign.css" />
+                  <Button fx:id="valider" layoutX="69.0" layoutY="279.0" mnemonicParsing="false" onAction="#valider" prefHeight="30.0" prefWidth="142.0" styleClass="login-btn" stylesheets="@logindesign.css" text="valider" />
+                  <Label layoutX="15.0" layoutY="89.0" prefHeight="31.0" prefWidth="267.0" styleClass="head-label" stylesheets="@logindesign.css" text="Saisissez le code envoyer" textFill="#286155">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane fx:id="emailform" layoutX="300.0" layoutY="-1.0" prefHeight="406.0" prefWidth="306.0" styleClass="gradient" stylesheets="@logindesign.css">
+               <children>
+                  <Button fx:id="envoyer" layoutX="84.0" layoutY="270.0" mnemonicParsing="false" onAction="#envoyer" prefHeight="30.0" prefWidth="141.0" styleClass="create-btn" stylesheets="@logindesign.css" text="envoyer" />
+                  <TextField fx:id="email" layoutX="55.0" layoutY="203.0" prefHeight="39.0" prefWidth="194.0" promptText="email" styleClass="textfield" stylesheets="@logindesign.css" />
+                  <Label layoutX="19.0" layoutY="89.0" prefHeight="31.0" prefWidth="267.0" stylesheets="@logindesign.css" text="Saisissez votre address mail" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="mdpform" layoutY="4.0" prefHeight="400.0" prefWidth="298.0" styleClass="white-form" stylesheets="@logindesign.css" visible="false">
+               <children>
+                  <PasswordField fx:id="Nmdp" layoutX="57.0" layoutY="200.0" prefHeight="27.0" prefWidth="170.0" promptText="Nouveau mot de pass" styleClass="textfield" stylesheets="@logindesign.css" />
+                  <Button fx:id="confirmer" layoutX="97.0" layoutY="266.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="30.0" prefWidth="110.0" styleClass="login-btn" stylesheets="@logindesign.css" text="confirmer" />
+                  <Label layoutX="30.0" layoutY="57.0" prefHeight="32.0" prefWidth="246.0" styleClass="head-label" stylesheets="@logindesign.css" text="Saisissez votre nouveau " textFill="#286155">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="88.0" prefHeight="31.0" prefWidth="130.0" stylesheets="@logindesign.css" text="Mot de pass" textFill="#286155">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
