@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.RubriqueCommandeController">
+   <children>
+      <AnchorPane prefHeight="422.0" prefWidth="745.0" styleClass="nav-form" stylesheets="@style.css">
+         <children>
+            <Button fx:id="ToAjoutliv" layoutX="594.0" layoutY="173.0" mnemonicParsing="false" onAction="#Pass_ajoutliv" styleClass="clear-btn" stylesheets="@style.css" text="Ajouter livraison" />
+            <Button fx:id="Toaffliv" layoutX="595.0" layoutY="235.0" mnemonicParsing="false" onAction="#Pass_afficheliv" styleClass="clear-btn" stylesheets="@style.css" text="Afficher livraison" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="ToAjout" layoutX="433.0" layoutY="174.0" mnemonicParsing="false" onAction="#Pass_ajout" styleClass="clear-btn" stylesheets="@style.css" text="Ajouter Commande" />
+      <Button fx:id="ToAffich" layoutX="432.0" layoutY="235.0" mnemonicParsing="false" onAction="#Pass_affiche" styleClass="clear-btn" stylesheets="@style.css" text="Afficher Commande" />
+   </children>
+</AnchorPane>
