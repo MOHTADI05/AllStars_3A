@@ -1,0 +1,37 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.gradient {
+   -fx-background-color:  linear-gradient(to bottom right, #054819,#20942b);
+}
+.prodReg-btn{
+       -fx-background-color:  linear-gradient(to bottom right, #054819,#066b23 );
+     -fx-backgroung-radius: 5px;
+     -fx-cursor: hand;
+     -fx-text-fill: #fff;
+     -fx-font-size: 14px
+}
+.head-label{
+    -fx-border-color: #000000;
+    -fx-padding: 0 0 0 5px;
+     -fx-font-size: 20px
+}
+.prodReg-btn:hover{
+           -fx-background-color:  linear-gradient(to bottom right, #054819,#20942b);
+
+} 
+.ActRec-btn{
+     -fx-background-color: transparent;
+      -fx-cursor: hand;
+      -fx-text-fill: #fff;
+           -fx-border-color: #fff;
+           -fx-border-width: 1px;
+
+
+}
+.ActRec-btn:focused{
+         -fx-background-color: transparent;
+      -fx-text-fill: #fff;
+
+}

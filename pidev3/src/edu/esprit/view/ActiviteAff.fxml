@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.Controlleur.ActiviteAffController">
+   <children>
+      <AnchorPane fx:id="menuform" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="3.0" prefHeight="494.0" prefWidth="613.0" stylesheets="@mainback.css">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <ScrollPane fx:id="meniScroll" layoutX="120.0" layoutY="93.0" prefHeight="494.4" prefWidth="613.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <GridPane fx:id="menugrid">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="616.0" layoutY="3.0" prefHeight="494.0" prefWidth="182.0" stylesheets="@mainback.css">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <TextField layoutX="17.0" layoutY="47.0" promptText="recherhe" />
+                  <Button layoutX="115.0" layoutY="83.0" mnemonicParsing="false" text="valider" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
