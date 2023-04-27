@@ -31,8 +31,8 @@ public class ServiceReponse implements IService<Reponse>{
     public void ajouter(Reponse r) {
         try {
             String query="INSERT INTO `reponse`"
-                    + "( `reclamation_id`, `objet`, `description`, `datereponse`) "
-                    + "VALUES ('"+r.getReclamation_id()+"','"+r.getObjet()+"','"+r.getDescription()+"','"+r.getDate_reponse()+"')";
+                    + "( `reponserelation_id`, `nom`, `description`) "
+                    + "VALUES ('"+r.getReclamation_id()+"','"+r.getObjet()+"','"+r.getDescription()+"')";
             Statement st=conn.createStatement();
             st.executeUpdate(query);
         } catch (SQLException ex) {
@@ -56,9 +56,9 @@ public class ServiceReponse implements IService<Reponse>{
         try {
             String query="UPDATE reponse SET "
                     + "`reclamation_id`='"+r.getReclamation_id()+"',"
-                    + "`objet`='"+r.getObjet()+"',"
+                    + "`nom`='"+r.getObjet()+"',"
                     + "`description`='"+r.getDescription()+"',"
-                    + "`datereponse`='"+r.getDate_reponse()+"' WHERE id="+id;
+                    +"' WHERE id="+id;
             Statement st=conn.createStatement();
             st.executeUpdate(query);
         } catch (SQLException ex) {
@@ -76,10 +76,9 @@ public class ServiceReponse implements IService<Reponse>{
             while(rs.next()){
                 Reponse r=new Reponse();
                 r.setId(rs.getInt("id"));
-                r.setReclamation_id(rs.getInt("reclamation_id"));
-                r.setObjet(rs.getString("objet"));
+                r.setReclamation_id(rs.getInt("reponserelation_id"));
+                r.setObjet(rs.getString("nom"));
                 r.setDescription(rs.getString("description"));
-                r.setDate_reponse(rs.getDate("datereponse"));
                 lr.add(r);
             }
         } catch (SQLException ex) {

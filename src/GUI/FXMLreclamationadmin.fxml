@@ -17,11 +17,11 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#72bda3" height="688.0" layoutY="-14.0" stroke="BLACK" strokeType="INSIDE" width="794.0" />
       <TableView fx:id="tvreclamation" layoutX="39.0" layoutY="141.0" prefHeight="438.0" prefWidth="735.0">
         <columns>
-          <TableColumn fx:id="tcemail" prefWidth="96.0" text="Email" />
-          <TableColumn fx:id="tcobject" prefWidth="101.0" text="Objet" />
-            <TableColumn fx:id="tcdescription" prefWidth="158.0" text="Description" />
-            <TableColumn fx:id="tcdatereclamation" prefWidth="127.0" text="Date reclamation" />
-            <TableColumn fx:id="tcdatetraitement" prefWidth="128.0" text="Date traitement" />
+          <TableColumn fx:id="tcemail" prefWidth="118.66665649414062" text="Email" />
+          <TableColumn fx:id="tcobject" prefWidth="92.33334350585938" text="Objet" />
+            <TableColumn fx:id="tcdescription" prefWidth="242.33331298828125" text="Description" />
+            <TableColumn fx:id="tcdatereclamation" minWidth="0.0" prefWidth="161.66668701171875" text="Date reclamation" />
+            <TableColumn fx:id="tcdatetraitement" minWidth="0.0" prefWidth="0.0" />
             <TableColumn fx:id="tcetat" prefWidth="124.0" text="Etat" />
         </columns>
       </TableView>

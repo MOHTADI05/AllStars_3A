@@ -19,10 +19,10 @@
         <columns>
           <TableColumn fx:id="tcemail" prefWidth="75.0" text="Email" />
           <TableColumn fx:id="tcobjet" prefWidth="123.0" text="Objet" />
-            <TableColumn fx:id="tcdescription" prefWidth="95.0" text="Description" />
-            <TableColumn fx:id="tcdatereclamation" prefWidth="134.0" text="Date reclamation" />
-            <TableColumn fx:id="tcdatetraitement" prefWidth="128.0" text="Date traitement" />
-            <TableColumn fx:id="tcetat" prefWidth="83.0" text="Etat" />
+            <TableColumn fx:id="tcdescription" prefWidth="191.0" text="Description" />
+            <TableColumn fx:id="tcdatereclamation" prefWidth="150.0" text="Date reclamation" />
+            <TableColumn fx:id="tcdatetraitement" minWidth="0.0" prefWidth="0.0" />
+            <TableColumn fx:id="tcetat" prefWidth="101.99993896484375" text="Etat" />
         </columns>
       </TableView>
       <TextField fx:id="tfobject" layoutX="93.0" layoutY="150.0" prefHeight="42.0" prefWidth="320.0" />

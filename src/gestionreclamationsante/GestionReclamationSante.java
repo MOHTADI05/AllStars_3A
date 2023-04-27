@@ -21,7 +21,7 @@ public class GestionReclamationSante {
      */
     public static void main(String[] args) {
         ServiceReclamation sr=new ServiceReclamation();
-        Reclamation r=new Reclamation("bbb@gmail.com", "test2", "test2", new Date(2023-1900,2,2), new Date(2023-1900,2,2), "Non traiter");
+        Reclamation r=new Reclamation("bbb@gmail.com", "test2", "test2", new Date(2023-1900,2,2), 0);
         //sr.ajouter(r);
         //sr.supprimer(21);
         //sr.modifier(23, r);

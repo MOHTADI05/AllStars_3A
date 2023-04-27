@@ -108,7 +108,7 @@ ObservableList<Reclamation> data=FXCollections.observableArrayList();
     private void envoyer(ActionEvent event) {
         Reclamation r=tvreclamation.getSelectionModel().getSelectedItem();
         if(r!=null){
-            if(r.getEtat().equals("Traitée")){
+            if(r.getEtat()==(1)){
                 Alert alert=new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Erreur de reponse");
                 alert.setContentText("Vouz avez deja repondre a cette reclamation!");
@@ -116,13 +116,11 @@ ObservableList<Reclamation> data=FXCollections.observableArrayList();
             }
             else{
                 Reponse rep=new Reponse();
-                rep.setDate_reponse(new Date(System.currentTimeMillis()));
                 rep.setDescription(tfreponse.getText());
                 rep.setObjet(tfobjet.getText());
                 rep.setReclamation_id(r.getId());
                 srep.ajouter(rep);
-                r.setEtat("Traitée");
-                r.setDate_traitement(new Date(System.currentTimeMillis()));
+                r.setEtat(1);
                 sr.modifier(r.getId(), r);
                 refresh();
             }
@@ -266,7 +264,7 @@ private void chercher(ActionEvent event) {
             }
             String lowerCaseFilter = newValue.toLowerCase();
 
-            if (reclamation.getObjet().toLowerCase().contains(lowerCaseFilter) || reclamation.getEtat().toLowerCase().contains(lowerCaseFilter)) {
+            if (reclamation.getObjet().toLowerCase().contains(lowerCaseFilter) ) {
                 return true;
             } else {
                 return false;

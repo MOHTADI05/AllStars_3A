@@ -71,7 +71,7 @@ public class FXMLreclamationuserController implements Initializable {
         r.setDate_reclamation(new Date(System.currentTimeMillis()));
         r.setDescription(tfdescription.getText());
         r.setEmail("aaa@gmail.com");
-        r.setEtat("Non traitée");
+        r.setEtat(0);
         r.setObjet(tfobject.getText());
         if(controleDeSaisie().length()>0){
             Alert alert=new Alert(Alert.AlertType.WARNING);
@@ -94,8 +94,7 @@ public class FXMLreclamationuserController implements Initializable {
             r.setDate_reclamation(new Date(System.currentTimeMillis()));
             r.setDescription(tfdescription.getText());
             r.setEmail("aaa@gmail.com");
-            r.setDate_traitement(null);
-            r.setEtat("Non traitée");
+            r.setEtat(0);
             r.setObjet(tfobject.getText());
             if(controleDeSaisie().length()>0){
                 Alert alert=new Alert(Alert.AlertType.WARNING);

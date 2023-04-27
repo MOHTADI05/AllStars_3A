@@ -51,8 +51,8 @@ public class ServiceReclamation implements IService<Reclamation>{
         String cleanedDescription = t.getDescription().replaceAll("(?i)bad|Merde|sale|merde|fuck", "****");
         
         // Construct the SQL query
-        String query = "INSERT INTO `reclamation` (`email`, `objet`, `description`, `date_reclamation`, `etat`) "
-                     + "VALUES ('" + t.getEmail() + "','" + t.getObjet() + "','" + cleanedDescription + "',"
+        String query = "INSERT INTO `reclamation` (`email`, `object`, `nom`, `description`, `date_reclamation`, `etat`) "
+                     + "VALUES ('" + t.getEmail() + "','" + t.getObjet()+ "','" + "Baha" + "','" + cleanedDescription + "',"
                      + "'" + t.getDate_reclamation() + "','" + t.getEtat() + "')";
 
         Statement st = conn.createStatement();
@@ -80,33 +80,26 @@ public class ServiceReclamation implements IService<Reclamation>{
         try {
             String query="UPDATE `reclamation` SET "
                     + "`email`='"+t.getEmail()+"',"
-                    + "`objet`='"+t.getObjet()+"',"
+                    + "`object`='"+t.getObjet()+"',"
                     + "`description`='"+t.getDescription()+"',"
                     + "`date_reclamation`='"+t.getDate_reclamation()+"',"
-                    + "`date_traitement`='"+t.getDate_traitement()+"',"
                     + "`etat`='"+t.getEtat()+"' WHERE id="+id;
             
             String query2="UPDATE `reclamation` SET "
                     + "`email`=?,"
-                    + "`objet`=?,"
+                    + "`object`=?,"
                     + "`description`=?,"
                     + "`date_reclamation`=?,"
-                    + "`date_traitement`=?,"
                     + "`etat`=? WHERE id=?";
             PreparedStatement ps=conn.prepareStatement(query2);
             ps.setString(1,t.getEmail());
             ps.setString(2,t.getObjet());
             ps.setString(3,t.getDescription());
             ps.setDate(4, (Date) t.getDate_reclamation());
-            if(t.getDate_traitement()==null){
-                ps.setNull(5,Types.DATE);
-            }
-            else{
-                ps.setDate(5, (Date) t.getDate_traitement());
-            }
+           
             
-            ps.setString(6,t.getEtat());
-            ps.setInt(7,id);
+            ps.setInt(5,t.getEtat());
+            ps.setInt(6,id);
             ps.executeUpdate();
             //Statement st=conn.createStatement();
             //st.executeUpdate(query);
@@ -126,11 +119,10 @@ public class ServiceReclamation implements IService<Reclamation>{
                 Reclamation r=new Reclamation();
                 r.setId(rs.getInt("id"));
                 r.setDate_reclamation(rs.getDate("date_reclamation"));
-                r.setDate_traitement(rs.getDate("date_traitement"));
                 r.setDescription(rs.getString("description"));
-                r.setObjet(rs.getString("objet"));
+                r.setObjet(rs.getString("object"));
                 r.setEmail(rs.getString("email"));
-                r.setEtat(rs.getString("etat"));
+                r.setEtat(rs.getInt("etat"));
                 lr.add(r);
             }
         } catch (SQLException ex) {

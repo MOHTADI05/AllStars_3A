@@ -12,7 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class MyConnection {
-    private String URL="jdbc:mysql://127.0.0.1:3306/gestionrec";
+    private String URL="jdbc:mysql://127.0.0.1:3306/doctortech1";
     private String USER="root";
     private String PWD="";
     private Connection conn;

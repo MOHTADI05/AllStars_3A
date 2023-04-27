@@ -13,29 +13,26 @@ public class Reclamation {
     private String objet;
     private String description;
     private Date date_reclamation;
-    private Date date_traitement;
-    private String etat;
+    private int etat;
 
     public Reclamation() {
     }
 
-    public Reclamation(String email, String objet, String description, Date date_reclamation, Date date_traitement, String etat) {
+    public Reclamation(String email, String objet, String description, Date date_reclamation, int etat) {
         this.email = email;
         this.objet = objet;
         this.description = description;
         this.date_reclamation = date_reclamation;
-        this.date_traitement = date_traitement;
-        this.etat = etat;
+        this.etat = 0;
     }
 
-    public Reclamation(int id, String email, String objet, String description, Date date_reclamation, Date date_traitement, String etat) {
+    public Reclamation(int id, String email, String objet, String description, Date date_reclamation,  boolean etat) {
         this.id = id;
         this.email = email;
         this.objet = objet;
         this.description = description;
         this.date_reclamation = date_reclamation;
-        this.date_traitement = date_traitement;
-        this.etat = etat;
+        this.etat = 0;
     }
 
     public int getId() {
@@ -78,25 +75,19 @@ public class Reclamation {
         this.date_reclamation = date_reclamation;
     }
 
-    public Date getDate_traitement() {
-        return date_traitement;
-    }
+  
 
-    public void setDate_traitement(Date date_traitement) {
-        this.date_traitement = date_traitement;
-    }
-
-    public String getEtat() {
+    public int getEtat() {
         return etat;
     }
 
-    public void setEtat(String etat) {
+    public void setEtat(int etat) {
         this.etat = etat;
     }
 
     @Override
     public String toString() {
-        return "Reclamation{" + "id=" + id + ", email=" + email + ", objet=" + objet + ", description=" + description + ", date_reclamation=" + date_reclamation + ", date_traitement=" + date_traitement + ", etat=" + etat + '}'+"\n";
+        return "Reclamation{" + "id=" + id + ", email=" + email + ", objet=" + objet + ", description=" + description + ", date_reclamation=" + date_reclamation +  ", etat=" + etat + '}'+"\n";
     }
     
     
