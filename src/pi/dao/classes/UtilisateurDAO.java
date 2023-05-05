@@ -42,36 +42,10 @@ public class UtilisateurDAO implements IUtilisateurDAO {
         connection = MyConnection.getInstance();
     }
 
-    /*@Override
-    public void inscription(Utilisateur U) {
-         
-        String hashedMdp = BCrypt.hashpw(U.getPassword(), BCrypt.gensalt());
-
-        String requete = "insert into utilisateur (id,nom,prenom,email,password,role,is_Blocked) values (?,?,?,?,?,?,?)";
-        try {
-            PreparedStatement ps = connection.prepareStatement(requete);
-             ps.setInt(1, U.getId());
-            ps.setString(2, U.getNom());
-            ps.setString(3, U.getPrenom());
-            ps.setString(4, U.getEmail());
-            ps.setString(5, hashedMdp);
-            ps.setString(6, U.getRole());
-            ps.setBoolean(7, U.getisBlocked());
-
-            ps.executeUpdate();
-            System.out.println("Ajout effectuée avec succès");
-        } catch (SQLException ex) {
-            //Logger.getLogger(PersonneDao.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("erreur lors de l'insertion " + ex.getMessage());
-        }
-    }
-*/
        @Override
    public boolean check(String email, String mdp, String role) {
     boolean authentifie = false;
-   /* ResultSet result = null;
-    role = "Client";
-    String requete = "SELECT * FROM utilisateur WHERE email = ? and role = ?";*/
+
   Utilisateur U= findByEmail(email);
               String hashedMdp = U.getPassword();
                  System.out.println(hashedMdp);
@@ -80,87 +54,13 @@ public class UtilisateurDAO implements IUtilisateurDAO {
                   authentifie=true;
               }
 
-/*  try {
-        PreparedStatement ps = connection.prepareStatement(requete);
-        ps.setString(1, email);
-        ps.setString(2, role);
-        result = ps.executeQuery();
-        
-        if (result.next()) {
-            String hashedMdp = result.getString("password");
-               
-                System.out.println(email);
-               // System.out.println(hashedMdp);
-                //System.out.println(mdp);
-                 System.out.println(BCrypt.checkpw(mdp,hashedMdp));
-            if (mdp==hashedMdp) {
-                System.out.println(mdp);
 
-                authentifie = true;
-            }
-          
-        }
-    } catch (SQLException ex) {
-        ex.printStackTrace();
-    }*/
 
     return authentifie;
 }
 
     
-     /*  @Override
-    public void login(Utilisateur U)  {
-       
-        //System.out.println(U.getPassword());
-    if (check(U.getEmail(), U.getPassword(),U.getRole())) {
-        // Connexion réussie 
-       
-        Session.getInstance().setLoggedUser(U);
-        String Role=U.getRole();
-        System.out.println(Role);
-        
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/pi/view/profil.fxml"));
-        Parent root;
-        try {
-            root = loader.load();
-            Scene scene = new Scene(root);
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException ex) {
-             ex.printStackTrace();  
-        }
-    } else if(checkA(U.getEmail(), U.getPassword(),U.getRole())) {
-          Session.getInstance().setLoggedUser(U);
-        String Role=U.getRole();
-        System.out.println(Role);
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/pi/view/list.fxml"));
-        Parent root;
-        try {
-                        // Récupère la fenêtre courante
-           
-            root = loader.load();
-            Scene scene = new Scene(root);
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException ex) {
-             ex.printStackTrace();
-            
-        }
-    }else //if(!checkA(U.getEmail(), U.getPassword(),U.getRole())&&!check(U.getEmail(), U.getPassword(),U.getRole()))
-    {
-        // Connexion échouée
-                                 
 
-        Alert alert = new Alert(AlertType.ERROR);
-        alert.setTitle("Erreur de connexion");
-        alert.setHeaderText("Informations d'identification incorrectes");
-        alert.setContentText("Le nom d'utilisateur ou le mot de passe est incorrect. Veuillez réessayer.");
-        alert.showAndWait();
-    }
-    
-}*/
 
     
      @Override
@@ -377,6 +277,12 @@ public class UtilisateurDAO implements IUtilisateurDAO {
         if (result.next()) {
             String hashedMdp = result.getString("password");
                  System.out.println(hashedMdp );
+                 // aandi mochkla fel bcrypt kaed nbadel fel salt manuellemnet nrod fih yabda $2a
+                             
+               char[] tableau = hashedMdp.toCharArray();
+               tableau[2] = 'a'; // Modifier la 3ème lettre
+               hashedMdp = new String(tableau);
+               System.out.println(hashedMdp);
          
                         String role=result.getString("role");
                          System.out.println(role );

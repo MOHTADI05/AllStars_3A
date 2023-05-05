@@ -22,22 +22,22 @@
                <left>
                   <AnchorPane prefHeight="600.0" prefWidth="194.0" styleClass="nav-form" stylesheets="@list.css" BorderPane.alignment="CENTER">
                      <children>
-                        <Label layoutX="18.0" layoutY="25.0" prefHeight="28.0" prefWidth="171.0" text="Bienvenue Admin" textFill="WHITE">
+                        <Label layoutX="18.0" layoutY="25.0" prefHeight="28.0" prefWidth="144.0" text="Bienvenue Admin" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="19.0" />
+                              <Font name="Copperplate Gothic Bold" size="14.0" />
                            </font>
                         </Label>
                         <Label fx:id="cin1" layoutX="62.0" layoutY="63.0" text="Cin" textFill="WHITE">
                            <font>
-                              <Font size="14.0" />
+                              <Font name="Copperplate Gothic Light" size="14.0" />
                            </font></Label>
                         <Label fx:id="email1" layoutX="57.0" layoutY="100.0" text="Email" textFill="WHITE">
                            <font>
-                              <Font size="14.0" />
+                              <Font name="Copperplate Gothic Light" size="14.0" />
                            </font></Label>
                         <Label fx:id="role1" layoutX="59.0" layoutY="129.0" text="Role" textFill="WHITE">
                            <font>
-                              <Font size="14.0" />
+                              <Font name="Copperplate Gothic Light" size="14.0" />
                            </font></Label>
                         <Line endX="67.99998474121094" layoutX="120.0" layoutY="165.0" startX="-110.40000915527344" stroke="WHITE" />
                         <Button fx:id="deconnecter" layoutX="30.0" layoutY="544.0" mnemonicParsing="false" onAction="#deconnecter" stylesheets="@list.css" text="Se deconnecter" textFill="WHITE">
@@ -49,6 +49,12 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Button>
+                        <Button fx:id="selima" layoutX="12.0" layoutY="198.0" mnemonicParsing="false" onAction="#selima" prefHeight="38.0" prefWidth="153.0" styleClass="btn" stylesheets="@mainback.css" text="Activite" />
+                        <Button fx:id="selima1" layoutX="9.0" layoutY="361.0" mnemonicParsing="false" onAction="#selima" prefHeight="38.0" prefWidth="153.0" styleClass="btn" stylesheets="@mainback.css" text="Produit" />
+                        <Button fx:id="reclamtion" layoutX="10.0" layoutY="302.0" mnemonicParsing="false" onAction="#reclamtion" prefHeight="38.0" prefWidth="153.0" styleClass="btn" stylesheets="@mainback.css" text="Reclamation" />
+                        <Button fx:id="reg" layoutX="10.0" layoutY="248.0" mnemonicParsing="false" onAction="#regim" prefHeight="38.0" prefWidth="153.0" styleClass="btn" stylesheets="@mainback.css" text="Rgime Alimentaire" />
+                        <Button fx:id="btn_produit" layoutX="6.0" layoutY="421.0" mnemonicParsing="false" onAction="#ProduitAction" prefHeight="38.0" prefWidth="153.0" styleClass="btn" stylesheets="@mainback.css" text="pproduit" />
+                        <Button layoutX="12.0" layoutY="479.0" mnemonicParsing="false" onAction="#CategorieGo" prefHeight="38.0" prefWidth="153.0" styleClass="btn" stylesheets="@mainback.css" text="Categorie" />
                      </children>
                   </AnchorPane>
                </left>

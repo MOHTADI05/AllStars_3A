@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.Controlleur.ActiviteAffController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane prefHeight="82.0" prefWidth="959.0" styleClass="nav-form" stylesheets="@list.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="17.0" layoutY="-15.0" prefHeight="95.0" prefWidth="930.0">
+                     <children>
+                        <Button layoutX="297.0" layoutY="39.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="168.0" styleClass="btn" stylesheets="@mainback.css" text="Regime Alimentaire">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="604.0" layoutY="39.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" styleClass="btn" stylesheets="@mainback.css" text="Produit">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="473.0" layoutY="39.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="122.0" styleClass="btn" stylesheets="@mainback.css" text="Reclamation">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="17.0" layoutY="43.0" text="DoctorTech" textFill="#fffcfc">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="profile" layoutX="740.0" layoutY="39.0" mnemonicParsing="false" onAction="#profile" prefHeight="38.0" prefWidth="88.0" styleClass="btn" stylesheets="@mainback.css" text="Profil">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="menuform" prefHeight="524.0" prefWidth="959.0" styleClass="gradient" stylesheets="@logindesign.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="79.0" layoutY="14.0" prefHeight="467.0" prefWidth="822.0" styleClass="white-bg" stylesheets="@mainback.css">
+                     <children>
+                        <ScrollPane fx:id="meniScroll" layoutX="31.0" layoutY="7.0" prefHeight="450.0" prefWidth="804.0" stylesheets="@list.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="7.0">
+                           <content>
+                              <GridPane fx:id="menugrid" prefHeight="60.0" prefWidth="121.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

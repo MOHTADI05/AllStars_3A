@@ -65,6 +65,14 @@ public class ProfilController implements Initializable {
     private Label prenom1;
     @FXML
     private Label mdp1;
+    @FXML
+    private Button Act;
+    @FXML
+    private Button deconnecter12;
+    @FXML
+    private Button reclamtion;
+    @FXML
+    private Button commande;
 
     /**
      * Initializes the controller class.
@@ -127,6 +135,45 @@ public class ProfilController implements Initializable {
                 stage.show();
             } catch (IOException ex) {
                 Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+    }
+
+    @FXML
+    private void Act(ActionEvent event) {
+         try {
+                Parent page1 = FXMLLoader.load(getClass().getResource("/pi/view/ActiviteAff.fxml"));
+                Scene scene = new Scene(page1);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException ex) {
+               ex.printStackTrace();
+            }
+    }
+
+    @FXML
+    private void reclamtion(ActionEvent event) {
+                 try {
+                Parent page1 = FXMLLoader.load(getClass().getResource("/pi/view/FrontR.fxml"));
+                Scene scene = new Scene(page1);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException ex) {
+               ex.printStackTrace();
+            }
+    }
+
+    @FXML
+    private void commande(ActionEvent event) {
+               try {
+                Parent page1 = FXMLLoader.load(getClass().getResource("/pi/GUIcmd/AfficherCommande.fxml"));
+                Scene scene = new Scene(page1);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException ex) {
+               ex.printStackTrace();
             }
     }
 }

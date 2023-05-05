@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.Controlleur.ExerciceController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="186.0" layoutY="51.0" prefHeight="400.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="nav-form" stylesheets="@list.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="78.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="5.0" layoutY="20.0" prefHeight="38.0" prefWidth="190.0" styleClass="add-btn" stylesheets="@list.css" text="DoctorTech Management System" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="10.0" layoutY="8.0" prefHeight="200.0" prefWidth="574.0" stylesheets="@list.css">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                           <children>
+                              <TableView fx:id="table_Ex" layoutX="14.0" layoutY="7.0" prefHeight="179.0" prefWidth="550.0">
+                                <columns>
+                                  <TableColumn fx:id="nomCol" prefWidth="75.0" text="nom" />
+                                  <TableColumn fx:id="RepCol" prefWidth="75.0" text="Repetition" />
+                                    <TableColumn fx:id="tempsCol" prefWidth="75.0" text="Temps" />
+                                    <TableColumn fx:id="likeCol" prefWidth="75.0" text="Likes" />
+                                    <TableColumn fx:id="DislikeCol" prefWidth="75.0" text="Dislike" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="214.0" prefHeight="182.0" prefWidth="574.0" stylesheets="@list.css">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -96,6 +96,16 @@ public class ListController implements Initializable {
     private ObservableList<Utilisateur> user = FXCollections.observableArrayList();
     @FXML
     private TextField Recherche;
+    @FXML
+    private Button selima;
+    @FXML
+    private Button selima1;
+    @FXML
+    private Button reclamtion;
+    @FXML
+    private Button reg;
+    @FXML
+    private Button btn_produit;
      
     /**
      * Initializes the controller class.
@@ -440,6 +450,78 @@ public boolean verifierEmail(String email) {
             // Logger.getLogger(MainBackController.class.getName()).log(Level.SEVERE, null, ex);
         }
 
+    }
+
+    @FXML
+    private void selima(ActionEvent event) {
+          try {
+                Parent page1 = FXMLLoader.load(getClass().getResource("/pi/view/mainBack.fxml"));
+                Scene scene = new Scene(page1);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException ex) {
+               ex.printStackTrace();
+            }
+                       
+        
+        
+        
+    }
+
+    @FXML
+    private void reclamtion(ActionEvent event) {
+        try {
+                Parent page1 = FXMLLoader.load(getClass().getResource("/pi/view/Back.fxml"));
+                Scene scene = new Scene(page1);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException ex) {
+               ex.printStackTrace();
+            }
+        
+        
+    }
+
+    @FXML
+    private void regim(ActionEvent event) {
+          try {
+                Parent page1 = FXMLLoader.load(getClass().getResource("/com/promotion/view/home.fxml"));
+                Scene scene = new Scene(page1);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException ex) {
+               ex.printStackTrace();
+            }
+        
+    }
+
+    @FXML
+    private void ProduitAction(ActionEvent event) {
+             try {
+                Parent page1 = FXMLLoader.load(getClass().getResource("/pi/view/ProdBack.fxml"));
+                Scene scene = new Scene(page1);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException ex) {
+               ex.printStackTrace();
+            }
+    }
+
+    @FXML
+    private void CategorieGo(ActionEvent event) {
+             try {
+                Parent page1 = FXMLLoader.load(getClass().getResource("/pi/view/CategorieBack.fxml"));
+                Scene scene = new Scene(page1);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException ex) {
+               ex.printStackTrace();
+            }
     }
 
     

@@ -20,7 +20,6 @@ import java.sql.Connection;
 import javax.swing.JOptionPane;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import org.mindrot.jbcrypt.BCrypt;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

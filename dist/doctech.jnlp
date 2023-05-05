@@ -8,14 +8,71 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="doctech.jar" size="288492" download="eager" />
+    <jar href="doctech.jar" size="13464553" download="eager" />
+    <jar href="lib\SparseBitSet-1.2.jar" size="24510" download="eager" />
+    <jar href="lib\TrayTester.jar" size="52070" download="eager" />
+    <jar href="lib\ant-1.10.12.jar" size="2254148" download="eager" />
+    <jar href="lib\ant-launcher-1.10.12.jar" size="18705" download="eager" />
     <jar href="lib\bcrypt-2.3.0.jar" size="1079" download="eager" />
+    <jar href="lib\commons-codec-1.11.jar" size="335042" download="eager" />
+    <jar href="lib\commons-codec-1.15.jar" size="353793" download="eager" />
+    <jar href="lib\commons-collections4-4.4.jar" size="751914" download="eager" />
+    <jar href="lib\commons-compress-1.21.jar" size="1018316" download="eager" />
+    <jar href="lib\commons-io-2.11.0.jar" size="327135" download="eager" />
+    <jar href="lib\commons-io-2.6.jar" size="214788" download="eager" />
+    <jar href="lib\commons-math3-3.6.1.jar" size="2213560" download="eager" />
+    <jar href="lib\curvesapi-1.07.jar" size="111978" download="eager" />
+    <jar href="lib\doctech.jar" size="13439135" download="eager" />
     <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\form-0.51.0.jar" size="194999" download="eager" />
+    <jar href="lib\guava-18.0.jar" size="2256213" download="eager" />
+    <jar href="lib\httpclient-4.5.6.jar" size="767140" download="eager" />
+    <jar href="lib\httpcore-4.4.10.jar" size="326356" download="eager" />
+    <jar href="lib\itext-1.3.1.jar" size="1553403" download="eager" />
+    <jar href="lib\itextpdf-5.5.13.3.jar" size="2334491" download="eager" />
     <jar href="lib\itextpdf-5.5.9.jar" size="2287148" download="eager" />
+    <jar href="lib\javax.json-1.1.4.jar" size="128770" download="eager" />
     <jar href="lib\javax.mail.jar" size="659033" download="eager" />
     <jar href="lib\jbcrypt.jar" size="14127" download="eager" />
     <jar href="lib\kotlin-stdlib-common-1.6.10.jar" size="200617" download="eager" />
+    <jar href="lib\log4j-api-2.18.0.jar" size="315115" download="eager" />
+    <jar href="lib\mapdb-1.0.8.jar" size="416533" download="eager" />
     <jar href="lib\mysql-connector-j-8.0.32.jar" size="2480823" download="eager" />
+    <jar href="lib\pdfbox-1.2.0.jar" size="4755771" download="eager" />
+    <jar href="lib\poi-3.9.jar" size="1869113" download="eager" />
+    <jar href="lib\poi-5.2.3.jar" size="2964641" download="eager" />
+    <jar href="lib\poi-excelant-5.2.3.jar" size="28800" download="eager" />
+    <jar href="lib\poi-ooxml-5.2.3.jar" size="2010497" download="eager" />
+    <jar href="lib\poi-ooxml-lite-5.2.3.jar" size="5898622" download="eager" />
+    <jar href="lib\rdf4j-http-client-2.5.0.jar" size="51447" download="eager" />
+    <jar href="lib\rdf4j-http-protocol-2.5.0.jar" size="32687" download="eager" />
+    <jar href="lib\rdf4j-model-2.5.0.jar" size="235211" download="eager" />
+    <jar href="lib\rdf4j-query-2.5.0.jar" size="60904" download="eager" />
+    <jar href="lib\rdf4j-queryalgebra-evaluation-2.5.0.jar" size="342681" download="eager" />
+    <jar href="lib\rdf4j-queryalgebra-model-2.5.0.jar" size="156592" download="eager" />
+    <jar href="lib\rdf4j-queryparser-api-2.5.0.jar" size="23642" download="eager" />
+    <jar href="lib\rdf4j-queryparser-sparql-2.5.0.jar" size="295865" download="eager" />
+    <jar href="lib\rdf4j-queryresultio-api-2.5.0.jar" size="31523" download="eager" />
+    <jar href="lib\rdf4j-queryresultio-sparqlxml-2.5.0.jar" size="25648" download="eager" />
+    <jar href="lib\rdf4j-repository-api-2.5.0.jar" size="75748" download="eager" />
+    <jar href="lib\rdf4j-repository-sail-2.5.0.jar" size="56850" download="eager" />
+    <jar href="lib\rdf4j-repository-sparql-2.5.0.jar" size="56432" download="eager" />
+    <jar href="lib\rdf4j-rio-api-2.5.0.jar" size="79405" download="eager" />
+    <jar href="lib\rdf4j-rio-datatypes-2.5.0.jar" size="9064" download="eager" />
+    <jar href="lib\rdf4j-rio-languages-2.5.0.jar" size="5027" download="eager" />
+    <jar href="lib\rdf4j-rio-ntriples-2.5.0.jar" size="19291" download="eager" />
+    <jar href="lib\rdf4j-rio-trig-2.5.0.jar" size="9026" download="eager" />
+    <jar href="lib\rdf4j-rio-turtle-2.5.0.jar" size="36398" download="eager" />
+    <jar href="lib\rdf4j-sail-api-2.5.0.jar" size="65646" download="eager" />
+    <jar href="lib\rdf4j-util-2.5.0.jar" size="110290" download="eager" />
+    <jar href="lib\slf4j-api-1.7.25.jar" size="41203" download="eager" />
+    <jar href="lib\slf4j-api-2.0.7.jar" size="63635" download="eager" />
+    <jar href="lib\tray-0.51.0.jar" size="30705" download="eager" />
+    <jar href="lib\tray-launcher-4-spring-boot-0.4.7.jar" size="8879" download="eager" />
+    <jar href="lib\twilio-9.4.0.jar" size="4925044" download="eager" />
+    <jar href="lib\twilio-9.5.0.jar" size="4924532" download="eager" />
+    <jar href="lib\xmlbeans-5.1.1.jar" size="2196526" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="doctech" >
     <param name="requiredFXVersion" value="8.0+"/>

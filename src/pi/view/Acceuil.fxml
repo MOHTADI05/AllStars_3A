@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@list.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.Controlleur.AcceuilController">
+   <children>
+      <Button fx:id="btnReg" layoutX="369.0" layoutY="122.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="157.0" styleClass="nav-form" stylesheets="@list.css" text="Regime Alimentaire" textFill="WHITE" />
+      <Button fx:id="btnprod" layoutX="53.0" layoutY="327.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="157.0" styleClass="nav-form" stylesheets="@list.css" text="Produit" textFill="WHITE" />
+      <AnchorPane layoutY="-5.0" prefHeight="206.0" prefWidth="294.0" stylesheets="@list.css">
+         <children>
+            <Button fx:id="btnAc" layoutX="56.0" layoutY="121.0" mnemonicParsing="false" onAction="#ac" prefHeight="50.0" prefWidth="158.0" styleClass="btn" stylesheets="@mainback.css" text="Activite" />
+            <ImageView fitHeight="80.0" fitWidth="88.0" layoutX="87.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-musculation-64.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="gradient" />
+            <String fx:value="nav-form" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="294.0" layoutY="201.0" prefHeight="200.0" prefWidth="307.0" styleClass="nav-form" stylesheets="@list.css">
+         <children>
+            <Button fx:id="btnRec" layoutX="82.0" layoutY="129.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="158.0" styleClass="btn" stylesheets="@mainback.css" text="Reclamation" />
+            <Button fx:id="btnback" layoutX="260.0" layoutY="173.0" mnemonicParsing="false" styleClass="ActRec-btn" text="Back" />
+            <ImageView fitHeight="90.0" fitWidth="80.0" layoutX="121.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-commentaires-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="415.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-bol-de-riz-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="102.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-fond-de-teint-30.png" />
+         </image>
+      </ImageView>
+   </children>
+   <styleClass>
+      <String fx:value="mainFxmlClass" />
+      <String fx:value="white-bg" />
+   </styleClass>
+</AnchorPane>

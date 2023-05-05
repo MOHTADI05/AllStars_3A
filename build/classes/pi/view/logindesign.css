@@ -22,6 +22,14 @@ and open the template in the editor.
     -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
 }
 
+.gradient1{
+    -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
+}
+.gradient1:hover{
+    -fx-background-color: linear-gradient(to bottom right, #286155,#0f6789 );
+}
+
+
 .white-form{
     -fx-background-color: #fff;
 }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.GUIcmd.AfficherCommandeController">
+   <children>
+      <BorderPane prefHeight="616.0" prefWidth="969.0">
+         <top>
+            <AnchorPane prefHeight="69.0" prefWidth="961.0" styleClass="nav-form" stylesheets="@../view/list.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="Act" layoutX="224.0" layoutY="23.0" mnemonicParsing="false" onAction="#Act" prefHeight="30.0" prefWidth="114.0" styleClass="gradient1" stylesheets="@../view/logindesign.css" text="Activites" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="reclamtion" layoutX="582.0" layoutY="24.0" mnemonicParsing="false" onAction="#reclamtion" styleClass="gradient1" stylesheets="@../view/logindesign.css" text="Reclamation" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deconnecter12" layoutX="386.0" layoutY="24.0" mnemonicParsing="false" onAction="#deconnecter" styleClass="gradient1" stylesheets="@../view/logindesign.css" text="Regime Alimentatire" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="profil" layoutX="740.0" layoutY="22.0" mnemonicParsing="false" onAction="#profil" prefHeight="30.0" prefWidth="101.0" styleClass="gradient1" stylesheets="@../view/logindesign.css" text="Profil" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="21.0" layoutY="27.0" prefHeight="30.0" prefWidth="154.0" text="DoctorTech" textFill="WHITE">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="527.0" prefWidth="791.0" styleClass="nav-form" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="oaffich" layoutX="177.0" layoutY="125.0" prefHeight="220.0" prefWidth="526.0" stylesheets="@style.css">
+                    <columns>
+                        <TableColumn fx:id="oaddress" prefWidth="125.5999755859375" text="Produit" />
+                        <TableColumn fx:id="onumcl" prefWidth="157.60003662109375" text="Date" />
+                        <TableColumn fx:id="oprix" prefWidth="107.99996948242188" text="Quantite" />
+                      <TableColumn fx:id="omail" prefWidth="131.20001220703125" text="Prix" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="rech" layoutX="163.0" layoutY="85.0" onKeyReleased="#FiltreKeyRealsead" prefHeight="26.0" prefWidth="132.0" promptText="nom" styleClass="search" stylesheets="@style.css" />
+                  <TextField fx:id="add" layoutX="33.0" layoutY="29.0" onKeyReleased="#FiltreKeyRealsead2" promptText="address" styleClass="search" stylesheets="@style.css" visible="false" />
+                  <Button fx:id="pdf" layoutX="714.0" layoutY="246.0" mnemonicParsing="false" onAction="#pdf" prefHeight="26.0" prefWidth="133.0" styleClass="add-btn" stylesheets="@style.css" text="PDF" />
+                  <Button fx:id="toModif" layoutX="602.0" layoutY="378.0" mnemonicParsing="false" onAction="#versModif" styleClass="update-btn" stylesheets="@style.css" text="Modifier" />
+                  <Button fx:id="supprimer" layoutX="349.0" layoutY="378.0" mnemonicParsing="false" onAction="#Supprimer" styleClass="delete-btn" stylesheets="@style.css" text="Supprimer" />
+                  <Button layoutX="714.0" layoutY="158.0" mnemonicParsing="false" onAction="#clic_desc" styleClass="logout" stylesheets="@style.css" text="Tri DESCENDANT">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="714.0" layoutY="197.0" mnemonicParsing="false" onAction="#clic_asec" prefHeight="22.0" prefWidth="134.0" styleClass="logout" stylesheets="@style.css" text="Tri ASCENDANT">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ajj" layoutX="517.0" layoutY="378.0" mnemonicParsing="false" onAction="#ajtcmd" styleClass="update-btn" stylesheets="@style.css" text="Ajouter" />
+                  <Button fx:id="To_rub" layoutX="184.0" layoutY="378.0" mnemonicParsing="false" onAction="#pass_rubrique" styleClass="clear-btn" stylesheets="@style.css" text="Retour" />
+                  <Button fx:id="pdf1" layoutX="714.0" layoutY="285.0" mnemonicParsing="false" onAction="#livraison" prefHeight="26.0" prefWidth="133.0" styleClass="add-btn" stylesheets="@style.css" text="Livraison" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

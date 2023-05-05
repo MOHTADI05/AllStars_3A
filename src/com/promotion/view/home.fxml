@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.promotion.view.HomeController">
+   <children>
+      <Rectangle arcHeight="7.0" arcWidth="5.0" fill="#ffffff94" height="546.0" layoutY="-6.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" style="-fx-cursor: 1;" width="242.0">
+         <cursor>
+           
+         </cursor>
+      </Rectangle>
+      <Button layoutX="918.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="26.0" prefWidth="38.0" style="-fx-background-color: f20808;" text="X" textFill="#0d0d0d" />
+      <TableView fx:id="personsTable" layoutX="266.0" layoutY="77.0" onMouseClicked="#getSelected" prefHeight="198.0" prefWidth="690.0" stylesheets="@style.css">
+         <columns>
+            <TableColumn fx:id="idc" prefWidth="116.0" text="id" />
+            <TableColumn fx:id="nameShow" prefWidth="111.0" text="name" />
+            <TableColumn fx:id="start_datec" prefWidth="116.0" text="start date" />
+            <TableColumn fx:id="end_datec" prefWidth="116.0" text="end_date" />
+            <TableColumn fx:id="caloreisShow" prefWidth="116.0" text="calories" />
+            <TableColumn fx:id="typeShow" prefWidth="116.0" text="type" />
+            <TableColumn fx:id="discriptionShow" prefWidth="111.0" text="discription" />
+         </columns>
+         <columnResizePolicy>
+           
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="588.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#supprimer" prefHeight="43.0" prefWidth="105.0" styleClass="update-btn" stylesheets="@style.css" text="supprimer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="770.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#update" prefHeight="43.0" prefWidth="105.0" styleClass="update-btn" stylesheets="@style.css" text="update" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label layoutX="266.0" layoutY="297.0" text="Name" />
+      <TextField id="prenomText" fx:id="nameCol" layoutX="370.0" layoutY="293.0" />
+      <Label layoutX="543.0" layoutY="296.0" prefHeight="17.0" prefWidth="80.0" text="Descriction" textAlignment="CENTER" />
+      <TextField id="nomText" fx:id="discriptionCol" layoutX="673.0" layoutY="292.0" prefHeight="26.0" prefWidth="149.0" />
+      <DatePicker fx:id="start_date" layoutX="370.0" layoutY="339.0" prefHeight="26.0" prefWidth="149.0" />
+      <Label layoutX="265.0" layoutY="343.0" text="START DATE" />
+      <Label layoutX="265.0" layoutY="386.0" text="END DATE" />
+      <Label layoutX="556.0" layoutY="343.0" text="Type" />
+      <TextField id="nomText" fx:id="typeCol" layoutX="673.0" layoutY="339.0" prefHeight="26.0" prefWidth="149.0" />
+      <Button id="valider" fx:id="save" graphicTextGap="10.0" layoutX="380.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="43.0" prefWidth="94.0" style="-fx-background-radius: 10 10 10 10;" styleClass="update-btn" stylesheets="@style.css" text="save" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label layoutX="560.0" layoutY="386.0" text="Calories" />
+      <TextField id="nomText" fx:id="caloriesCol" layoutX="673.0" layoutY="382.0" prefHeight="26.0" prefWidth="149.0" />
+      <TextField id="nomText" fx:id="end_date" layoutX="370.0" layoutY="381.0" prefHeight="26.0" prefWidth="149.0" />
+      <TextField id="prenomText" fx:id="eChercher" layoutX="393.0" layoutY="28.0" promptText="recherche" />
+      <Button fx:id="typeNext" layoutX="891.0" layoutY="558.0" mnemonicParsing="false" onAction="#next" styleClass="card" stylesheets="@style.css" text="next" textFill="#f5f2f2" visible="false" />
+      <Button fx:id="bchercher" layoutX="588.0" layoutY="27.0" mnemonicParsing="false" onAction="#chercher" prefHeight="27.0" prefWidth="94.0" styleClass="update-btn" stylesheets="@style.css" text="search" />
+      <Button layoutX="725.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#trie" prefHeight="35.0" prefWidth="140.0" styleClass="update-btn" stylesheets="@style.css" text="order by calories" />
+      <Button fx:id="FrontB" layoutX="261.0" layoutY="28.0" mnemonicParsing="false" onAction="#Front" prefHeight="26.0" prefWidth="74.0" styleClass="add-btn" stylesheets="@style.css" text="stat" />
+      <AnchorPane layoutX="-2.0" prefHeight="610.0" prefWidth="242.0" styleClass="nav-form" stylesheets="@style.css">
+         <children>
+            <Label layoutX="8.0" layoutY="33.0" text="DoctorTech Management System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="33.0" layoutY="147.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="158.0" styleClass="btn" stylesheets="@style.css" text="Activite" />
+            <Button layoutX="33.0" layoutY="216.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="158.0" styleClass="btn" text="Regime Alimentaire">
+               <stylesheets>
+                  <URL value="@../../../../../Downloads/style.css" />
+                  <URL value="@style.css" />
+               </stylesheets>
+            </Button>
+            <Button layoutX="33.0" layoutY="280.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="158.0" styleClass="btn" stylesheets="@../../../../../../../Downloads/style.css" text="Produit" />
+            <Button layoutX="33.0" layoutY="349.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="158.0" styleClass="btn" stylesheets="@../../../../../../../Downloads/style.css" text="Reclamation" />
+            <Button fx:id="retour" layoutX="19.0" layoutY="554.0" mnemonicParsing="false" onAction="#retour" prefHeight="26.0" prefWidth="55.0" styleClass="btn" text="back" />
+         </children>
+      </AnchorPane>
+      
+   </children>
+</AnchorPane>
