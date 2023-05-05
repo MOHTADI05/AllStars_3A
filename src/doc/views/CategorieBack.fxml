@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doc.views.CategorieBackController">
+   <children>
+      <AnchorPane fx:id="mainForm" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="141.0" layoutY="59.0" prefHeight="400.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-14.0" layoutY="34.0" prefHeight="400.0" prefWidth="200.0" styleClass="nav-form" stylesheets="@list.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="78.0" prefWidth="200.0" stylesheets="@mainback.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label layoutX="41.0" layoutY="14.0" prefHeight="29.0" prefWidth="118.0" stylesheets="@list.css" text="DOCTORTECH " textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Copperplate Gothic Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="60.0" layoutY="35.0" prefHeight="30.0" prefWidth="71.0" stylesheets="@list.css" text="Activite" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Copperplate Gothic Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Button fx:id="AcBtn" layoutX="9.0" layoutY="200.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" styleClass="btn" stylesheets="@mainback.css" text="Activite" />
+                              <Button layoutX="9.0" layoutY="265.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" styleClass="btn" stylesheets="@mainback.css" text="regime Alimentaire" />
+                              <Button layoutX="8.0" layoutY="335.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" styleClass="btn" text="Reclamation">
+                                 <stylesheets>
+                                    <URL value="@list.css" />
+                                    <URL value="@mainback.css" />
+                                 </stylesheets>
+                              </Button>
+                              <Button layoutX="8.0" layoutY="399.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" styleClass="btn" text="Produit">
+                                 <stylesheets>
+                                    <URL value="@list.css" />
+                                    <URL value="@mainback.css" />
+                                 </stylesheets>
+                              </Button>
+                              <Button fx:id="back" layoutX="14.0" layoutY="550.0" mnemonicParsing="false" onAction="#backHome" prefHeight="26.0" prefWidth="154.0" stylesheets="@list.css" text="Produits">
+                                 <styleClass>
+                                    <String fx:value="logout" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="252.0" stylesheets="@mainback.css" visible="false">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="radius" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <ScrollPane layoutX="26.0" layoutY="49.0" prefHeight="374.4" prefWidth="252.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <content>
+                                    <AnchorPane prefHeight="497.0" prefWidth="250.0" styleClass="trasparent">
+                                       <children>
+                                          <AnchorPane layoutX="8.0" layoutY="14.0" prefHeight="131.0" prefWidth="224.0" styleClass="nav-form">
+                                             <children>
+                                                <ImageView fitHeight="65.0" fitWidth="62.0" layoutX="23.0" layoutY="33.0">
+                                                   <image>
+                                                      <Image url="@../../../../../../../Downloads/icons8-conférence-téléphonique-50.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="91.0" layoutY="98.0" prefHeight="18.0" prefWidth="118.0" text="Nombre d'Adhérent" />
+                                                <Label layoutX="189.0" layoutY="14.0" prefHeight="18.0" prefWidth="20.0" text="0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="8.0" layoutY="164.0" prefHeight="131.0" prefWidth="224.0" styleClass="nav-form">
+                                             <children>
+                                                <ImageView fitHeight="65.0" fitWidth="62.0" layoutX="14.0" layoutY="25.0">
+                                                   <image>
+                                                      <Image url="@../../../../../../../Downloads/icons8-commander-sur-mobile-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="79.0" layoutY="98.0" prefHeight="18.0" prefWidth="130.0" text="Nombre de Commande" />
+                                                <Label layoutX="183.0" layoutY="15.0" prefHeight="18.0" prefWidth="20.0" text="0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="400.0" prefWidth="594.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="302.0" prefWidth="783.0" stylesheets="@mainback.css" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="6.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radius" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView fx:id="TableCat" layoutX="12.0" layoutY="56.0" onMouseClicked="#SelectedActivite" prefHeight="210.0" prefWidth="535.0" stylesheets="@list.css" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="56.0">
+                                       <columns>
+                                          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                                          <TableColumn fx:id="nomCol" prefWidth="75.0" text="Nom" />
+                                          <TableColumn fx:id="infoCol" prefWidth="389.0" text="Information" />
+                                       </columns>
+                                    </TableView>
+                                    <AnchorPane layoutX="577.0" layoutY="37.0" prefHeight="178.0" prefWidth="178.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <TextField fx:id="Rech" layoutX="14.0" layoutY="6.0" prefHeight="26.0" prefWidth="281.0" promptText="recherche..." />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="7.0" layoutY="207.0" prefHeight="248.0" prefWidth="785.0" stylesheets="@list.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="2.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radius" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="nomTxt" layoutX="85.0" layoutY="26.0" prefHeight="26.0" prefWidth="102.0" />
+                                    <Label layoutX="262.0" layoutY="30.0" prefHeight="20.0" prefWidth="79.0" text="Information">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="infoTxt" layoutX="374.0" layoutY="26.0" prefHeight="82.0" prefWidth="212.0" />
+                                    <Label layoutX="25.0" layoutY="30.0" prefHeight="18.0" prefWidth="55.0" text="Nom">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="604.0" layoutY="13.0" prefHeight="146.0" prefWidth="144.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <Button fx:id="btnAdd" layoutX="119.0" layoutY="182.0" mnemonicParsing="false" onAction="#addCat" prefHeight="42.0" prefWidth="95.0" styleClass="update-btn" stylesheets="@list.css" text="Ajouter" />
+                                    <Button fx:id="btnMod" layoutX="233.0" layoutY="182.0" mnemonicParsing="false" onAction="#updateCat" prefHeight="40.0" prefWidth="95.0" styleClass="update-btn" stylesheets="@list.css" text="Modifier" />
+                                 </children>
+                              </AnchorPane>
+                              <Separator layoutY="330.0" prefHeight="16.0" prefWidth="786.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="8.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
